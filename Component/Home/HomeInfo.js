@@ -6,7 +6,7 @@ const HomeInfo = () => {
   return (
     <View style={styles.Home}>
       <ScrollView>
-      <HomeBanner/>
+      <HomeBanner TypeId={0}/>
      </ScrollView>
     </View>
   )

@@ -5,8 +5,8 @@ import HomeBanner from '../Home/HomeBanner'
 const Apps = () => {
   return (
     <View style={styles.Apps} >
-     <ScrollView>
-   <HomeBanner/>
+     <ScrollView >
+     <HomeBanner TypeId={2}/>
      </ScrollView>
     </View>
   )
@@ -19,5 +19,11 @@ const styles = StyleSheet.create({
     marginLeft:75,
     backgroundColor:'red',
     height:"100%",
+  },
+  BannerScroll:{
+    position:"absolute",
+    top:300,
+    left:15,
+
   }
 })
