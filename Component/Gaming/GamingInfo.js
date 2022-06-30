@@ -16,7 +16,7 @@ export default GamingInfo
 
 const styles = StyleSheet.create({
   Gaming:{
-    marginLeft:75,
+    marginLeft:72,
     backgroundColor:'red',
     height:"100%",
   }

@@ -1,21 +1,25 @@
-import { Image, ScrollView, StyleSheet, Text, View } from 'react-native'
+import { Image, Pressable, ScrollView, StyleSheet, Text, View } from 'react-native'
 import React from 'react'
 import { Data } from '../../Data'
 const HomeBanner = ({TypeId}) => {
   const HomeItem=Data.map((item,index)=>item)[TypeId].BannerList
-  console.log(Data.map((item,index)=>item)[TypeId].BannerList)
+  const [Banner,setBanner]=React.useState({
+    url:"https://img1.hulu.com/user/v3/artwork/87e9a533-38b1-4e1a-a8c6-50a0b96e1a64?base_image_bucket_name=image_manager&base_image=b8b1e5a7-872f-4c56-bdc6-8295c837c0c8&size=600x338&format=jpeg",
+    index:0,
+    caption:"Games & Movies with Pets"
+  })
+
   return (
     <View style={styles.Banner}>
-     
-      <Text style={styles.BannerText}>Home</Text>
+      <Text style={styles.BannerText}>{Data.map((item,index)=>item)[TypeId].Type}</Text>
       <View style={styles.BannerDes}>
-        <Text style={styles.BannerCaption}>Games & Movies with Pets</Text>
+        <Text style={styles.BannerCaption}>{Banner.caption}</Text>
         <View style={styles.BannerButton}>
           <Text style={{color:"#fff"}}>See details</Text>
         </View>
       </View>
       <Image
-      source={{uri:"https://img1.hulu.com/user/v3/artwork/87e9a533-38b1-4e1a-a8c6-50a0b96e1a64?base_image_bucket_name=image_manager&base_image=b8b1e5a7-872f-4c56-bdc6-8295c837c0c8&size=600x338&format=jpeg"}}
+      source={{uri:Banner.url}}
       style={styles.BannerImage}
       />
      <ScrollView
@@ -26,13 +30,26 @@ const HomeBanner = ({TypeId}) => {
      activeOffsetY={[-30, 30]}
      >
       {HomeItem.map((item,index)=>{
-       
+        const SaveImage=()=>{
+          setBanner({
+            url:item.Image,
+            index:index,
+            caption:item.Caption
+          })
+        }
         return(
-          <View style={styles.BannerItem} key={index}>
+          <View style={{
+            marginLeft:10,
+            borderWidth:index===Banner.index?4:0,
+            borderColor:"rgba(0, 0, 128,0.7)",
+            borderRadius:12,
+          }} key={index}>
+            <Pressable onPress={SaveImage}>
             <Image
             source={{uri:item.Image}}
             style={styles.BannerItemImage}
             />
+            </Pressable>
           </View>
         )
       })}
@@ -47,7 +64,7 @@ const styles = StyleSheet.create({
    Banner:{
     height:500,
     backgroundColor:"gray",
-    position:"relative"
+    position:"relative",
    },
    BannerImage:{
      width:"100%",
@@ -94,13 +111,11 @@ const styles = StyleSheet.create({
     },
     BannerItem:{
       marginLeft:10,
-      display:"flex",
-      zIndex:100,
-      left:0,
+      zIndex:1000,
     },
     BannerScroll:{
       position:"absolute",
-      top:300,
+      top:320,
       left:15,
 
     }

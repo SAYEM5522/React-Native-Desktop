@@ -50,8 +50,8 @@ const TabBar = ({state,descriptors,navigation}) => {
         >
         <View style={{
           backgroundColor: isFocused ? '#fff' : 'transparent',
-          width:70,
-          height:70,
+          width:65,
+          height:65,
           display:"flex",
           justifyContent:"center",
           alignItems:"center",

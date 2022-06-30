@@ -1,12 +1,14 @@
 import { ScrollView, StyleSheet, Text, View } from 'react-native'
 import React from 'react'
 import HomeBanner from '../Home/HomeBanner'
+import TopFreeApps from '../Home/TopFreeApps'
 
 const Apps = () => {
   return (
     <View style={styles.Apps} >
      <ScrollView >
      <HomeBanner TypeId={2}/>
+     <TopFreeApps/>
      </ScrollView>
     </View>
   )
@@ -16,8 +18,8 @@ export default Apps
 
 const styles = StyleSheet.create({
   Apps:{
-    marginLeft:75,
-    backgroundColor:'red',
+    marginLeft:72,
+    backgroundColor:'lightgray',
     height:"100%",
   },
   BannerScroll:{
