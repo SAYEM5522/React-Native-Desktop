@@ -13,7 +13,7 @@ const styles = StyleSheet.create({
 
   }
 })
-const DemoItem = ({title,apiName}) => {
+const DemoItem = ({title,apiName,size}) => {
   
   const HomeItem=Item.map((item,index)=>item)[0][apiName]
   
@@ -25,7 +25,7 @@ const DemoItem = ({title,apiName}) => {
       {
          HomeItem.map((item,index)=>{
           return(
-            <DemoItemDetails item={item} index={index} />
+            <DemoItemDetails item={item} index={index} size={size} />
           )
          })
       }
