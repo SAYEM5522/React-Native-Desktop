@@ -48,7 +48,7 @@
   },
   {
     id:2,
-    Type:"Gaming",
+    Type:"Apps",
     BannerList:[
       {
         id:1,
@@ -97,7 +97,7 @@
         Name:"Itune",
         Image:"https://img1.hulu.com/user/v3/artwork/87e9a533-38b1-4e1a-a8c6-50a0b96e1a64?base_image_bucket_name=image_manager&base_image=b8b1e5a7-872f-4c56-bdc6-8295c837c0c8&size=600x338&format=jpeg",
         type:"Music",
-        Rating:1000
+        Rating:100
 
       },
       {
@@ -128,7 +128,7 @@
   },
   {
     id:3,
-    Type:"Apps",
+    Type:"Gaming",
     BannerList:[
       {
         id:1,

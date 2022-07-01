@@ -18,23 +18,7 @@ import TabBar from './Screen/TabBar';
 import Ionicons from 'react-native-vector-icons/Ionicons';
 import FontAwesome from 'react-native-vector-icons/FontAwesome';
 import GamingScreen from './Screen/GamingScreen';
-const SideBarList=[
-  {
-    id:1,
-    name:'HomeList',
-    screen:HomeScreen,
-  },
-  {
-    id:2,
-    name:'AppScreen',
-    screen:AppScreen,
-  },
-  {
-    id:3,
-    name:'Movies & TV',
-    screen:HomeScreen,
-  }
-]
+
 const App =() =>{
   const Tab = createBottomTabNavigator();
   return (
@@ -69,18 +53,6 @@ const App =() =>{
             tabBarIcon: ({ color, size, }) => (
               <Image 
               source={require('./image/w-2.png')}
-               style={{width:29,height:29}}
-              />
-  
-            ),
-          }}
-        
-        name="Gaming" component={GamingScreen} />
-        <Tab.Screen 
-          options={{
-            tabBarIcon: ({ color, size, }) => (
-              <Image 
-              source={require('./image/w-3.png')}
                style={{width:27,height:27}}
               />
   
@@ -88,6 +60,19 @@ const App =() =>{
           }}
         
         name="Apps" component={AppScreen} />
+        <Tab.Screen 
+          options={{
+            tabBarIcon: ({ color, size, }) => (
+              <Image 
+              source={require('./image/w-3.png')}
+               style={{width:29,height:29}}
+              />
+  
+            ),
+          }}
+        
+        name="Gaming" component={GamingScreen} />
+       
         <Tab.Screen 
           options={{
             tabBarIcon: ({ color, size }) => (
