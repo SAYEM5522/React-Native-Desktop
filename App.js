@@ -5,6 +5,7 @@ import { createNativeStackNavigator } from '@react-navigation/native-stack';
 import React from 'react';
 import {
   Image,
+  LogBox,
   StatusBar,
   StyleSheet,
   Text,
@@ -21,6 +22,7 @@ import GamingScreen from './Screen/GamingScreen';
 
 const App =() =>{
   const Tab = createBottomTabNavigator();
+  LogBox.ignoreLogs(['EventEmitter.removeListener'])
   return (
    
     <View style={styles.Container}>

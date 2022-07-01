@@ -19,7 +19,7 @@ export default Apps
 const styles = StyleSheet.create({
   Apps:{
     marginLeft:72,
-    backgroundColor:'lightgray',
+    backgroundColor:'whitesmoke',
     height:"100%",
   },
   BannerScroll:{

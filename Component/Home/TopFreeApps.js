@@ -26,6 +26,7 @@ const TopFreeApps = () => {
                   <Image
                   source={require('../../image/w5.png')}
                   style={styles.Rating}
+                  key={index}
                  />
                 )
               })
@@ -52,11 +53,11 @@ const styles = StyleSheet.create({
     display:"flex",
     flexDirection:"row",
     flexWrap:"wrap",
-    marginLeft:50,
+    
   },
   TopFreeApps:{
     height:110,
-    width:360,
+    width:385,
     borderRadius:5,
     backgroundColor:"#fff",
     margin:10,
@@ -66,10 +67,11 @@ const styles = StyleSheet.create({
     borderColor:"lightgray"
   },
   Caption:{
-    fontSize:21,
-    marginLeft:30,
-    marginTop:15,
-    fontWeight:"700"
+    fontSize:20,
+    marginLeft:10,
+    marginTop:20,
+    fontWeight:"700",
+    marginBottom:10
   },
   BannerItemImage:{
     width:75,
@@ -110,7 +112,7 @@ const styles = StyleSheet.create({
   Rating:{
     width:13,
     height:13,
-    marginRight:2.5
+    marginRight:3
   },
   Rating_Count:{
    fontSize:13,

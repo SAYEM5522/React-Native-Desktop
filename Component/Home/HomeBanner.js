@@ -69,7 +69,7 @@ const styles = StyleSheet.create({
    BannerImage:{
      width:"100%",
      height:"100%",
-     resizeMode:"contain",
+     resizeMode:"cover",
    },
    BannerText:{
     color:"white",
