@@ -18,7 +18,6 @@ const HomeInfo = () => {
       <MiniBanner ApiId={2} title={"Featured free games"} description={"Explore free fun to play games and finf new favorite"} ApiName={"Featured_Free_Games"}/>
       <DemoItem title={"Best selling games"} apiName={"Best_Selling_Games"}/>
       <MiniBanner ApiId={2} title={"Featured free games"} description={"Explore free fun to play games and finf new favorite"} ApiName={"Featured_Free_Games"}/>
-
       </View>
      </ScrollView>
     </View>

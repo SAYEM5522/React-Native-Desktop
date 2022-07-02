@@ -6,7 +6,7 @@ export const Item=[
       {
         id:1,
         name:"Spotify",
-        Image:"https://store-images.s-microsoft.com/image/apps.7471.14495311847124170.e89a4dce-fd9a-4a10-b8e4-a6c3aa1c055e.03d81561-4078-4efb-8884-19e1161ab56b?w=100",
+        Image:"https://store-images.s-microsoft.com/image/apps.30432.13571498826857201.00a9d390-581f-492c-b148-b2ce81649480.b4ea65c8-8446-470b-a904-1080ffacc04e?w=100",
         type:"Music",
         Rating:1000,
         list:"Owanable"
@@ -14,7 +14,7 @@ export const Item=[
       {
         id:2,
         name:"Spotify",
-        Image:"https://store-images.s-microsoft.com/image/apps.7471.14495311847124170.e89a4dce-fd9a-4a10-b8e4-a6c3aa1c055e.03d81561-4078-4efb-8884-19e1161ab56b?w=100",
+        Image:"https://store-images.s-microsoft.com/image/apps.20311.13756631990520576.c7bf8936-a11d-4c89-b498-2442c2977baf.d9909661-86c4-4ca8-b820-20101dd12a50?w=100",
         type:"Music",
         Rating:1000,
         list:"Owanable"
@@ -22,7 +22,7 @@ export const Item=[
       {
         id:3,
         name:"Spotify",
-        Image:"https://store-images.s-microsoft.com/image/apps.7471.14495311847124170.e89a4dce-fd9a-4a10-b8e4-a6c3aa1c055e.03d81561-4078-4efb-8884-19e1161ab56b?w=100",
+        Image:"https://store-images.s-microsoft.com/image/apps.7151.14463102301496575.4f5d3996-e039-4517-b858-744323a1cac6.bb18b98e-1840-4f95-8612-7dad2e4c81f7?w=100",
         type:"Music",
         Rating:1000,
         list:"Owanable"
@@ -208,7 +208,7 @@ export const Item=[
     Best_Selling_Games:[
       {
         id:1,
-        name:"Spotify",
+        name:"Candy crash saga",
         Image:"https://store-images.s-microsoft.com/image/apps.7471.14495311847124170.e89a4dce-fd9a-4a10-b8e4-a6c3aa1c055e.03d81561-4078-4efb-8884-19e1161ab56b?w=100",
         type:"Music",
         Rating:1000,

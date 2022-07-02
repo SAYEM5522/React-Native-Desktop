@@ -6,7 +6,7 @@ const GamingInfo = () => {
   return (
     <View style={styles.Gaming}>
       <ScrollView>
-      <HomeBanner TypeId={1}/>
+      <HomeBanner TypeId={2}/>
      </ScrollView>
     </View>
   )

@@ -54,7 +54,7 @@
       {
         id:1,
         Description:"Hulu no longer offers free content unless you're taking part in a trial plan",
-        Image:"https://img1.hulu.com/user/v3/artwork/87e9a533-38b1-4e1a-a8c6-50a0b96e1a64?base_image_bucket_name=image_manager&base_image=b8b1e5a7-872f-4c56-bdc6-8295c837c0c8&size=600x338&format=jpeg",
+        Image:"https://canvas-cdn-prod.azureedge.net/assets/ff/ee/ffeecab1-d8af-438a-8526-e70be9ce27c1.jpg?n=BestEntertainmentApps-WW-Tile-3840x2160-W11-02.jpg",
         Button:"See details",
         Caption:"Games & Movies with Pets",
 

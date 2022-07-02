@@ -4,7 +4,7 @@ import { Data } from '../../Data'
 const HomeBanner = ({TypeId}) => {
   const HomeItem=Data.map((item,index)=>item)[TypeId].BannerList
   const [Banner,setBanner]=React.useState({
-    url:"https://img1.hulu.com/user/v3/artwork/87e9a533-38b1-4e1a-a8c6-50a0b96e1a64?base_image_bucket_name=image_manager&base_image=b8b1e5a7-872f-4c56-bdc6-8295c837c0c8&size=600x338&format=jpeg",
+    url:"https://canvas-cdn-prod.azureedge.net/assets/3a/63/3a634fa4-d15f-4128-aa90-077088f8fd1b.png?n=New_MS365_4-26-22.png",
     index:0,
     caption:"Games & Movies with Pets"
   })
