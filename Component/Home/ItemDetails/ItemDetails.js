@@ -1,16 +1,16 @@
 import { Image, Pressable, StyleSheet, Text, View } from 'react-native'
 import React from 'react'
-import { useCallback } from 'react'
 import { useNavigation } from '@react-navigation/native'
+import { useCallback } from 'react'
 
-const MiniBannerDetails = () => {
+const ItemDetails = () => {
   const navigation=useNavigation()
   const GoBack=useCallback(()=>{
-    navigation.goBack()
-  },[navigation])
+    navigation.navigate("MiniBannerDetails")
+  },[])
   return (
-    <View style={styles.Details}>
-      <Pressable onPress={()=>{navigation.goBack()}}>
+    <View style={styles.Container}>
+        <Pressable onPress={GoBack}>
       <Image
                   source={require('../../image/ms7.png')}
                   style={styles.Arrow}
@@ -21,16 +21,16 @@ const MiniBannerDetails = () => {
   )
 }
 
-export default MiniBannerDetails
+export default ItemDetails
 
 const styles = StyleSheet.create({
-  Details:{
-    marginLeft:72,
-    height:"100%",
-    backgroundColor:"red",
-    flex:1
-   },
-   Arrow:{
+  Container:{
+    flex:1,
+    display:"flex",
+
+
+  },
+  Arrow:{
     height:20,
     width:20
    }

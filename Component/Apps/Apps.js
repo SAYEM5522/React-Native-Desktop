@@ -4,10 +4,12 @@ import HomeBanner from '../Home/HomeBanner'
 import TopFreeApps from '../Home/TopFreeApps'
 import DemoItem from "../Home/DemoItem"
 import MiniBanner from "../Home/MiniBanner"
+import Header from '../Home/Header'
 const Apps = () => {
   return (
     <View style={styles.Apps} >
      <ScrollView >
+      <Header/>
      <HomeBanner TypeId={1}/>
 
      <View style={styles.Home_Info}>

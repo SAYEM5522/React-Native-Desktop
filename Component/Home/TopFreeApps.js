@@ -1,9 +1,14 @@
-import { Image, StyleSheet, Text, View } from 'react-native'
+import { Image, Pressable, StyleSheet, Text, View } from 'react-native'
 import React from 'react'
 import { Data } from '../../Data'
+import { useNavigation } from '@react-navigation/native'
+import { useCallback } from 'react'
 const TopFreeApps = () => {
+  const navigation=useNavigation()
   const TopApp=Data.map((item,index)=>item)[1].Top_Free_Apps
-
+  const Goto=useCallback(()=>{
+    navigation.navigate("MiniBannerDetails")
+  },[])
   return (
     <View>
         <Text style={styles.Caption}>Top free Apps</Text>
@@ -11,6 +16,7 @@ const TopFreeApps = () => {
     {
        TopApp.map((item,index)=>{
         return(
+          <Pressable onPress={Goto} key={index}>
           <View style={styles.TopFreeApps} key={index}>
            <Image
             source={{uri:item.Image}}
@@ -37,6 +43,7 @@ const TopFreeApps = () => {
            </View>
            <Text style={styles.Free}>Free</Text>
           </View>
+          </Pressable>
         )
        })
      }

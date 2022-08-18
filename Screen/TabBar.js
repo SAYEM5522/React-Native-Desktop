@@ -100,6 +100,7 @@ const styles = StyleSheet.create({
     display:"flex",
     justifyContent:"center",
     alignItems:"center",
+    marginTop:20
   },
   IconShift:{
     display:"flex",

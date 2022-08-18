@@ -4,11 +4,14 @@ import HomeBanner from './HomeBanner'
 import TopFreeApps from './TopFreeApps'
 import MiniBanner from './MiniBanner'
 import DemoItem from './DemoItem'
+import Header from './Header'
 
 const HomeInfo = () => {
   return (
-    <View style={styles.Home}>
+    <View style={[styles.Home]}>
       <ScrollView>
+      <Header/>
+
       <HomeBanner TypeId={0}/>
       <View style={styles.Home_Info}>
       <TopFreeApps/>
@@ -30,7 +33,8 @@ const styles = StyleSheet.create({
    Home:{
     marginLeft:72,
     height:"100%",
-    backgroundColor:"whitesmoke"
+    backgroundColor:"whitesmoke",
+    width:"100%"
    },
    Home_Info:{
     marginLeft:35,

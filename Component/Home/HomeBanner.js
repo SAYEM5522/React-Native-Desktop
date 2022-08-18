@@ -65,6 +65,8 @@ const styles = StyleSheet.create({
     height:500,
     backgroundColor:"gray",
     position:"relative",
+    borderTopLeftRadius:5,
+    borderTopRightRadius:5,
    },
    BannerImage:{
      width:"100%",

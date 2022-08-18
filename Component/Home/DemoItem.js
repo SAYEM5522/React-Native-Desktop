@@ -38,7 +38,7 @@ const DemoItem = ({title,apiName,size}) => {
       {
          SliceItem.map((item,index)=>{
           return(
-            <DemoItemDetails item={item} index={index} size={size} />
+            <DemoItemDetails item={item} index={index} size={size} key={index} />
           )
          })
       }

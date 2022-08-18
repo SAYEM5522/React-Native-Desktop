@@ -16,7 +16,8 @@ const styles = StyleSheet.create({
     marginLeft:10,
     marginTop:20,
     marginBottom:20,
-    marginRight:33
+    marginRight:33,
+    width:"91%"
   },
   BannerButton:{
     backgroundColor:"rgba(250,250,250,0.1)",

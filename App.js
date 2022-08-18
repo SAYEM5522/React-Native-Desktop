@@ -11,17 +11,18 @@ import {
   Text,
   View,
 } from 'react-native';
-import Feather from "react-native-vector-icons/Feather";
 import AppScreen from './Screen/AppScreen';
 import HomeScreen from './Screen/HomeScreen';
 import MoviesTv from './Screen/Movies&Tv';
 import TabBar from './Screen/TabBar';
-import Ionicons from 'react-native-vector-icons/Ionicons';
-import FontAwesome from 'react-native-vector-icons/FontAwesome';
+
 import GamingScreen from './Screen/GamingScreen';
+
+
 
 const App =() =>{
   const Tab = createBottomTabNavigator();
+  const Stack=createNativeStackNavigator()
   LogBox.ignoreLogs(['EventEmitter.removeListener'])
   return (
    
@@ -29,7 +30,7 @@ const App =() =>{
       <StatusBar hidden={true}/>
     <NavigationContainer>
       <Tab.Navigator
-       initialRouteName="Home"
+      //  initialRouteName="Home"
        tabBar={props => <TabBar {...props}  />}
        screenOptions={{
          headerShown:false,
@@ -88,6 +89,8 @@ const App =() =>{
         name='Movies & Tv' component={MoviesTv}/>
       </Tab.Navigator>
    </NavigationContainer>
+ 
+  
 
   </View>
   );
