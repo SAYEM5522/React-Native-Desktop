@@ -14,8 +14,8 @@ export default SearchItem
 const styles = StyleSheet.create({
   SearchItem:{
     width:450,
-    height:600,
-    backgroundColor:"red",
-    borderRadius:10
+    height:500,
+    backgroundColor:"#fff",
+    borderRadius:5
   }
 })

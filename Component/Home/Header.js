@@ -1,5 +1,6 @@
-import { StyleSheet, Text, TextInput, View } from 'react-native'
+import { Pressable, StyleSheet, Text, TextInput, View } from 'react-native'
 import React, { useCallback, useState } from 'react'
+import SearchItem from './SearchItem'
 
 const Header = () => {
   const [text,SetText]=useState("")
@@ -7,19 +8,37 @@ const Header = () => {
   const TextChange=useCallback((text)=>{
        SetText(text)
   },[])
+  const PressOpen=useCallback(()=>{
+   setOpen(!open)
+  },[open])
   return (
     <View style={styles.Header}>
+   
       <View style={styles.Left_Header}>
        <Text style={styles.Left_Header_Text}>Microsoft Store</Text>
       </View>
       <View style={styles.Middle_Header}>
+        <View style={{position:"relative"}}>
       <TextInput
         style={styles.Search}
         placeholder="Search apps, games, movies and more"
         onChangeText={TextChange}
-        
-        
+        onPressIn={PressOpen}
       />
+        <View style={{
+      position:"absolute",
+      top:32,
+      alignSelf:"center",
+     }}>
+      {
+        open?
+        <SearchItem/>:
+        null
+      }
+      
+
+     </View>
+      </View>
     </View>
     <View style={styles.Right_Header}>
     <Text>Microsoft Store</Text>
@@ -39,6 +58,7 @@ const styles = StyleSheet.create({
     flexDirection:"row",
     justifyContent:"space-evenly",
     alignItems:"center",
+    position:"relative"
   },
   Search:{
     height:31,
