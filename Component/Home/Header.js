@@ -32,7 +32,7 @@ const Header = () => {
      }}>
       {
         open?
-        <SearchItem/>:
+        <SearchItem search={text}/>:
         null
       }
       

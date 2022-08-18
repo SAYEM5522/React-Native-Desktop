@@ -1,4 +1,4 @@
-export const Item=[
+export const Item2=[
   {
     id:1,
     Type:"Home",
@@ -151,10 +151,7 @@ export const Item=[
         price:900
       }
     ]
-  },
-  {
-    id:2,
-    Type:"Apps",
+  ,
     App_Essential_Apps:[
       {
         id:1,
@@ -311,10 +308,8 @@ export const Item=[
         price:900
       }
     ]
-  },
-  {
-    id:3,
-    Type:"Games",
+ ,
+   
     Game_Essential_Apps:[
       {
         id:1,

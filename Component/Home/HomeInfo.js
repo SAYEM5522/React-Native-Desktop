@@ -11,16 +11,15 @@ const HomeInfo = () => {
     <View style={[styles.Home]}>
       <ScrollView>
       <Header/>
-
       <HomeBanner TypeId={0}/>
       <View style={styles.Home_Info}>
       <TopFreeApps/>
-      <MiniBanner ApiId={1} title={"Essential Apps"} description={"Take your windows experience new level "} ApiName={"Essential_Apps"} />
-      <DemoItem title={"Music streaming apps"} apiName={"Music_Streaming_Apps"} size={true}/>
-      <DemoItem title={"Best selling games"} apiName={"Best_Selling_Games"}/>
-      <MiniBanner ApiId={2} title={"Featured free games"} description={"Explore free fun to play games and finf new favorite"} ApiName={"Featured_Free_Games"}/>
-      <DemoItem title={"Best selling games"} apiName={"Best_Selling_Games"}/>
-      <MiniBanner ApiId={2} title={"Featured free games"} description={"Explore free fun to play games and finf new favorite"} ApiName={"Featured_Free_Games"}/>
+      <MiniBanner ApiId={1} title={"Essential Apps"} description={"Take your windows experience new level "} ApiName={"App_Essential_Apps"} />
+      <DemoItem title={"Music streaming apps"} apiName={"Home_Music_Streaming_Apps"} size={true}/>
+      <DemoItem title={"Best selling games"} apiName={"Home_Best_Selling_Games"}/>
+      <MiniBanner ApiId={2} title={"Featured free games"} description={"Explore free fun to play games and finf new favorite"} ApiName={"Game_Featured_Free_Games"}/>
+      <DemoItem title={"Best selling games"} apiName={"Home_Best_Selling_Games"}/>
+      <MiniBanner ApiId={2} title={"Featured free games"} description={"Explore free fun to play games and finf new favorite"} ApiName={"Game_Featured_Free_Games"}/>
       </View>
      </ScrollView>
     </View>

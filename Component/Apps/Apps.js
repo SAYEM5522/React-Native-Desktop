@@ -14,8 +14,8 @@ const Apps = () => {
 
      <View style={styles.Home_Info}>
      <TopFreeApps/>
-     <DemoItem title={"Music streaming apps"} apiName={"Music_Streaming_Apps"} size={true}/>
-     <MiniBanner ApiId={1} title={"Essential Apps"} description={"Take your windows experience new level "} ApiName={"Essential_Apps"} />
+     <DemoItem title={"Music streaming apps"} apiName={"Home_Music_Streaming_Apps"} size={true}/>
+     <MiniBanner ApiId={1} title={"Essential Apps"} description={"Take your windows experience new level "} ApiName={"App_Essential_Apps"} />
 
      </View>
      </ScrollView>
