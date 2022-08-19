@@ -61,7 +61,7 @@ const styles = StyleSheet.create({
 const DemoItemDetails = ({item,index,size}) => {
   const navigation=useNavigation()
   const GotoDetails =useCallback(()=>{
-     navigation.navigate("ItemDetails",{id:1})
+     navigation.navigate("ItemDetails",{id:1,type:"Game"})
   },[])
   return (
     <Pressable onPress={GotoDetails}>

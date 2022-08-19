@@ -57,7 +57,7 @@ export const Item2=[
         id:6,
         name:"Spotify",
         Image:"https://store-images.s-microsoft.com/image/apps.21124.13777453757269044.1ac58219-df7a-442e-b51c-648dd6d66d80.825c26db-cecc-43bf-86be-0391e0a50408?q=90&w=270&h=405&mode=crop&format=jpg&background=%230078D7",
-        type:"Music",
+        type:"Game",
         Rating:1000,
         list:"Owanable",
         genere:"Home_Best_Selling_Games"
@@ -66,7 +66,7 @@ export const Item2=[
         id:7,
         name:"Spotify",
         Image:"https://store-images.s-microsoft.com/image/apps.45787.9007199266251721.272a38e8-1cb6-413f-892d-c36d74a53a7a.2c93936c-63d8-457a-838f-5027bab854c7?q=90&w=270&h=405&mode=crop&format=jpg&background=%230078D7",
-        type:"Music",
+        type:"Game",
         Rating:1000,
         list:"Owanable",
         genere:"Home_Best_Selling_Games"
@@ -76,7 +76,7 @@ export const Item2=[
         id:8,
         name:"Spotify",
         Image:"https://store-images.s-microsoft.com/image/apps.21124.13777453757269044.1ac58219-df7a-442e-b51c-648dd6d66d80.825c26db-cecc-43bf-86be-0391e0a50408?q=90&w=270&h=405&mode=crop&format=jpg&background=%230078D7",
-        type:"Music",
+        type:"Game",
         Rating:1000,
         list:"Owanable",
         genere:"Home_Best_Selling_Games"
@@ -86,7 +86,7 @@ export const Item2=[
         id:9,
         name:"Spotify",
         Image:"https://store-images.s-microsoft.com/image/apps.1838.9007199266280866.c91d768f-43f7-46a3-ba5a-b13731a03443.4692517b-fe18-4b01-96ce-af9066561866?q=90&w=270&h=405&mode=crop&format=jpg&background=%230078D7",
-        type:"Music",
+        type:"Game",
         Rating:1000,
         list:"Owanable",
         genere:"Home_Best_Selling_Games"
@@ -96,7 +96,7 @@ export const Item2=[
         id:10,
         name:"Spotify",
         Image:"https://store-images.s-microsoft.com/image/apps.53674.13812021519099434.07c416c9-b111-4c55-be3d-6b8dcb0686a0.9a1df41d-f4f8-43ce-84b3-25cf67018c84?q=90&w=270&h=405&mode=crop&format=jpg&background=%230078D7",
-        type:"Music",
+        type:"Game",
         Rating:1000,
         list:"Owanable",
         genere:"Home_Best_Selling_Games"

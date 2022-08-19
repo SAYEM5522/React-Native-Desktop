@@ -25,7 +25,7 @@ const ItemTop = ({id}) => {
                      <Text style={styles.AvgRatingText}>Average</Text>
                     </View>
                     <View style={styles.RatingListBorder}>
-                    <Text style={styles.Rating}>{item.Rating}</Text>
+                    <Text style={styles.Rating}>{`${item.Rating>=1000?item.Rating/1000:item.Rating}${item.Rating>=1000?'k':''}`}</Text>
                     <Text style={styles.RatingText}>Ratings</Text>
                     </View>
                   </View>

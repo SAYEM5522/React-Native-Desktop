@@ -55,6 +55,7 @@ const ItemScreenShoots = ({id}) => {
         })
       }
     </View>
+    
 
     </>
   )
