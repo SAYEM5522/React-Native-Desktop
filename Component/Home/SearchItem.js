@@ -1,38 +1,43 @@
-import { StyleSheet, Text, View } from 'react-native'
+import { Image, ScrollView, StyleSheet, Text, View } from 'react-native'
 import React from 'react'
-import { Item } from '../../ItemList'
+import { Item2 } from '../../ItemList2'
 
 
 const SearchItem = ({search}) => {
- 
   return (
     <View style={styles.SearchItem}>
-     {
-        Item?.filter((value)=>{
+      <ScrollView >
+    {
+      Item2.filter((value)=>{
+       if(search===""){
+        return value
+       }
+       else if(
+        value.name.toLowerCase().includes(search.toLowerCase()) ||
+        value.type.toLowerCase().includes(search.toLowerCase())
+       ){
+         return value
+       }
+      }).map((item,index)=>{
+        return(
          
-          if(search==="")
-          {
-            return null
-          }
-          else if(
-            value.App_Best_Selling_Games.map((lis,i)=>lis.name.t).includes(search.toLowerCase())
-            
-            )
-          {
-            return value
-          }
-        }
-        
-        ).map((list,index)=>{ 
-        
-          return(
-           
-            <View key={index}>
-              <Text>kk</Text>
+          <View style={styles.ItemList} key={index} >
+           <View>
+           <Image
+           source={{uri:item.Image}}
+            style={styles.Image}
+           />
+           </View>
+            <View style={styles.ItemDetails}>
+              <Text style={styles.Name}>{item.name}</Text>
+              <Text style={styles.Type}>{item.type}</Text>
             </View>
-          )
-        })
-      }
+          </View>
+          
+        )
+      })
+    }
+    </ScrollView>
     </View>
   )
 }
@@ -44,6 +49,31 @@ const styles = StyleSheet.create({
     width:450,
     height:550,
     backgroundColor:"#fff",
-    borderRadius:5
+    borderRadius:2
+  },
+  Image:{
+    width:45,
+    height:45,
+    borderRadius:5,
+    resizeMode:"contain"
+
+  },
+  ItemList:{
+    flexDirection:"row",
+    alignItems:"center",
+    padding:10,
+  },
+  ItemDetails:{
+    flexDirection:"column",
+    marginLeft:13,
+
+  },
+  Name:{
+    fontSize:15,
+  },
+  Type:{
+    marginTop:4,
+    fontSize:13,
+    color:"#999"
   }
 })

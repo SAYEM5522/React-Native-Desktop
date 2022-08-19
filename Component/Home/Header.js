@@ -1,4 +1,4 @@
-import { Pressable, StyleSheet, Text, TextInput, View } from 'react-native'
+import { Image, Pressable, ScrollView, StyleSheet, Text, TextInput, View } from 'react-native'
 import React, { useCallback, useState } from 'react'
 import SearchItem from './SearchItem'
 
@@ -24,7 +24,13 @@ const Header = () => {
         placeholder="Search apps, games, movies and more"
         onChangeText={TextChange}
         onPressIn={PressOpen}
+        
       />
+       <Image
+                  source={require('../../image/w7.png')}
+                  style={styles.SearchIcon}
+                  
+                 />
         <View style={{
       position:"absolute",
       top:32,
@@ -32,7 +38,9 @@ const Header = () => {
      }}>
       {
         open?
-        <SearchItem search={text}/>:
+       
+        <SearchItem search={text}/>
+        :
         null
       }
       
@@ -78,5 +86,12 @@ const styles = StyleSheet.create({
     position:"absolute",
     left:-80,
     top:-6
+  },
+  SearchIcon:{
+    position:"absolute",
+    right:25,
+    top:5,
+    height:22,
+    width:22
   }
 })

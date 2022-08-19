@@ -1,15 +1,14 @@
 export const Item2=[
-  {
-    id:1,
-    Type:"Home",
-    Home_Music_Streaming_Apps:[
+  
+   
       {
         id:1,
         name:"Spotify",
         Image:"https://store-images.s-microsoft.com/image/apps.30432.13571498826857201.00a9d390-581f-492c-b148-b2ce81649480.b4ea65c8-8446-470b-a904-1080ffacc04e?w=100",
         type:"Music",
         Rating:1000,
-        list:"Owanable"
+        list:"Owanable",
+        genere:"Home_Music_Streaming_Apps"
       },
       {
         id:2,
@@ -17,454 +16,511 @@ export const Item2=[
         Image:"https://store-images.s-microsoft.com/image/apps.20311.13756631990520576.c7bf8936-a11d-4c89-b498-2442c2977baf.d9909661-86c4-4ca8-b820-20101dd12a50?w=100",
         type:"Music",
         Rating:1000,
-        list:"Owanable"
+        list:"Owanable",
+        genere:"Home_Music_Streaming_Apps"
+
       },
       {
         id:3,
-        name:"Spotify",
+        name:"HBO",
         Image:"https://store-images.s-microsoft.com/image/apps.7151.14463102301496575.4f5d3996-e039-4517-b858-744323a1cac6.bb18b98e-1840-4f95-8612-7dad2e4c81f7?w=100",
         type:"Music",
         Rating:1000,
-        list:"Owanable"
+        list:"Owanable",
+        genere:"Home_Music_Streaming_Apps"
+
       },
       {
         id:4,
-        name:"Spotify",
+        name:"Amazon Prime Video",
         Image:"https://store-images.s-microsoft.com/image/apps.7471.14495311847124170.e89a4dce-fd9a-4a10-b8e4-a6c3aa1c055e.03d81561-4078-4efb-8884-19e1161ab56b?w=100",
         type:"Music",
         Rating:1000,
-        list:"Owanable"
+        list:"Owanable",
+        genere:"Home_Music_Streaming_Apps"
+
       },
       {
         id:5,
-        name:"Spotify",
+        name:"Disney+",
         Image:"https://store-images.s-microsoft.com/image/apps.7471.14495311847124170.e89a4dce-fd9a-4a10-b8e4-a6c3aa1c055e.03d81561-4078-4efb-8884-19e1161ab56b?w=100",
         type:"Music",
         Rating:1000,
-        list:"Owanable"
+        list:"Owanable",
+        genere:"Home_Music_Streaming_Apps"
+
       },
       
-    ],
-    Home_Best_Selling_Games:[
+   
+  
       {
-        id:1,
+        id:6,
         name:"Spotify",
         Image:"https://store-images.s-microsoft.com/image/apps.21124.13777453757269044.1ac58219-df7a-442e-b51c-648dd6d66d80.825c26db-cecc-43bf-86be-0391e0a50408?q=90&w=270&h=405&mode=crop&format=jpg&background=%230078D7",
         type:"Music",
         Rating:1000,
-        list:"Owanable"
+        list:"Owanable",
+        genere:"Home_Best_Selling_Games"
       },
       {
-        id:2,
+        id:7,
         name:"Spotify",
         Image:"https://store-images.s-microsoft.com/image/apps.45787.9007199266251721.272a38e8-1cb6-413f-892d-c36d74a53a7a.2c93936c-63d8-457a-838f-5027bab854c7?q=90&w=270&h=405&mode=crop&format=jpg&background=%230078D7",
         type:"Music",
         Rating:1000,
-        list:"Owanable"
+        list:"Owanable",
+        genere:"Home_Best_Selling_Games"
+
       },
       {
-        id:3,
+        id:8,
         name:"Spotify",
         Image:"https://store-images.s-microsoft.com/image/apps.21124.13777453757269044.1ac58219-df7a-442e-b51c-648dd6d66d80.825c26db-cecc-43bf-86be-0391e0a50408?q=90&w=270&h=405&mode=crop&format=jpg&background=%230078D7",
         type:"Music",
         Rating:1000,
-        list:"Owanable"
+        list:"Owanable",
+        genere:"Home_Best_Selling_Games"
+
       },
       {
-        id:4,
+        id:9,
         name:"Spotify",
         Image:"https://store-images.s-microsoft.com/image/apps.1838.9007199266280866.c91d768f-43f7-46a3-ba5a-b13731a03443.4692517b-fe18-4b01-96ce-af9066561866?q=90&w=270&h=405&mode=crop&format=jpg&background=%230078D7",
         type:"Music",
         Rating:1000,
-        list:"Owanable"
+        list:"Owanable",
+        genere:"Home_Best_Selling_Games"
+
       },
       {
-        id:5,
+        id:10,
         name:"Spotify",
         Image:"https://store-images.s-microsoft.com/image/apps.53674.13812021519099434.07c416c9-b111-4c55-be3d-6b8dcb0686a0.9a1df41d-f4f8-43ce-84b3-25cf67018c84?q=90&w=270&h=405&mode=crop&format=jpg&background=%230078D7",
         type:"Music",
         Rating:1000,
-        list:"Owanable"
+        list:"Owanable",
+        genere:"Home_Best_Selling_Games"
+
       },
       {
-        id:6,
+        id:11,
         name:"Spotify",
         Image:"https://store-images.s-microsoft.com/image/apps.59166.13735730254131365.fcc2ce21-1051-4747-ad47-babc66fc8536.37688e46-adbe-4bfc-b8c3-84162b48fd48?q=90&w=270&h=405&mode=crop&format=jpg&background=%230078D7",
         type:"Music",
         Rating:1000,
-        list:"Owanable"
+        list:"Owanable",
+        genere:"Home_Best_Selling_Games"
+
       }
-    ],
-    Home_New_Movies:[
+    ,
+    
       {
-        id:1,
+        id:12,
         name:"Spotify",
         Image:"https://store-images.s-microsoft.com/image/apps.7471.14495311847124170.e89a4dce-fd9a-4a10-b8e4-a6c3aa1c055e.03d81561-4078-4efb-8884-19e1161ab56b?w=100",
         type:"Music",
         Rating:1000,
         list:"Owanable",
-        price:1000
+        price:1000,
+        genere:"Home_New_Movies"
       },
       {
-        id:2,
+        id:13,
         name:"Spotify",
         Image:"https://store-images.s-microsoft.com/image/apps.7471.14495311847124170.e89a4dce-fd9a-4a10-b8e4-a6c3aa1c055e.03d81561-4078-4efb-8884-19e1161ab56b?w=100",
         type:"Music",
         Rating:1000,
         list:"Owanable",
-        price:1000
+        price:1000,
+        genere:"Home_New_Movies"
+
       },
       {
-        id:3,
+        id:14,
         name:"Spotify",
         Image:"https://store-images.s-microsoft.com/image/apps.7471.14495311847124170.e89a4dce-fd9a-4a10-b8e4-a6c3aa1c055e.03d81561-4078-4efb-8884-19e1161ab56b?w=100",
         type:"Music",
         Rating:1000,
         list:"Owanable",
-        price:900
+        price:900,
+        genere:"Home_New_Movies"
+
       },
       {
-        id:4,
+        id:15,
         name:"Spotify",
         Image:"https://store-images.s-microsoft.com/image/apps.7471.14495311847124170.e89a4dce-fd9a-4a10-b8e4-a6c3aa1c055e.03d81561-4078-4efb-8884-19e1161ab56b?w=100",
         type:"Music",
         Rating:1000,
         list:"Owanable",
-        price:90
+        price:90,
+        genere:"Home_New_Movies"
+
       },
       {
-        id:5,
+        id:16,
         name:"Spotify",
         Image:"https://store-images.s-microsoft.com/image/apps.7471.14495311847124170.e89a4dce-fd9a-4a10-b8e4-a6c3aa1c055e.03d81561-4078-4efb-8884-19e1161ab56b?w=100",
         type:"Music",
         Rating:1000,
         list:"Owanable",
-        price:900
+        price:900,
+        genere:"Home_New_Movies"
+
       },
       {
-        id:6,
+        id:17,
         name:"Spotify",
         Image:"https://store-images.s-microsoft.com/image/apps.7471.14495311847124170.e89a4dce-fd9a-4a10-b8e4-a6c3aa1c055e.03d81561-4078-4efb-8884-19e1161ab56b?w=100",
         type:"Music",
         Rating:1000,
         list:"Owanable",
-        price:900
+        price:900,
+        genere:"Home_New_Movies"
+
       }
-    ]
-  ,
-    App_Essential_Apps:[
+ ,
       {
-        id:1,
+        id:18,
         name:"Spotify",
         Image:"https://store-images.s-microsoft.com/image/apps.47495.13634052595610511.c45457c9-b4af-46b0-8e61-8d7c0aec3f56.a8b71481-8a43-465d-88d6-e63add92c112?w=100",
         type:"Music",
         Rating:1000,
-        list:"Owanable"
+        list:"Owanable",
+        genere:"App_Essential_Apps"
       },
       {
-        id:2,
+        id:19,
         name:"Spotify",
         Image:"https://store-images.s-microsoft.com/image/apps.32357.14618985536919905.4b30e4f3-f7a1-4421-840c-2cc97b10e8e0.6e7a96f1-33ad-4447-8e2b-7de730f9a05e?w=100",
         type:"Music",
         Rating:1000,
-        list:"Owanable"
+        list:"Owanable",
+        genere:"App_Essential_Apps"
       },
       {
-        id:3,
+        id:20,
         name:"Spotify",
         Image:"https://store-images.s-microsoft.com/image/apps.7471.14495311847124170.e89a4dce-fd9a-4a10-b8e4-a6c3aa1c055e.03d81561-4078-4efb-8884-19e1161ab56b?w=100",
         type:"Music",
         Rating:1000,
-        list:"Owanable"
+        list:"Owanable",
+        genere:"App_Essential_Apps"
       },
       {
-        id:4,
+        id:21,
         name:"Spotify",
         Image:"https://store-images.s-microsoft.com/image/apps.7471.14495311847124170.e89a4dce-fd9a-4a10-b8e4-a6c3aa1c055e.03d81561-4078-4efb-8884-19e1161ab56b?w=100",
         type:"Music",
         Rating:1000,
-        list:"Owanable"
+        list:"Owanable",
+        genere:"App_Essential_Apps"
       },
       {
-        id:5,
+        id:22,
         name:"Spotify",
         Image:"https://store-images.s-microsoft.com/image/apps.7471.14495311847124170.e89a4dce-fd9a-4a10-b8e4-a6c3aa1c055e.03d81561-4078-4efb-8884-19e1161ab56b?w=100",
         type:"Music",
         Rating:1000,
-        list:"Owanable"
+        list:"Owanable",
+        genere:"App_Essential_Apps"
       },
       {
-        id:6,
+        id:23,
         name:"Spotify",
         Image:"https://store-images.s-microsoft.com/image/apps.7471.14495311847124170.e89a4dce-fd9a-4a10-b8e4-a6c3aa1c055e.03d81561-4078-4efb-8884-19e1161ab56b?w=100",
         type:"Music",
         Rating:1000,
-        list:"Owanable"
+        list:"Owanable",
+        genere:"App_Essential_Apps"
       }
-    ],
-    App_Best_Selling_Games:[
+ ,
       {
-        id:1,
+        id:24,
         name:"Candy crash saga",
         Image:"https://store-images.s-microsoft.com/image/apps.7471.14495311847124170.e89a4dce-fd9a-4a10-b8e4-a6c3aa1c055e.03d81561-4078-4efb-8884-19e1161ab56b?w=100",
         type:"Music",
         Rating:1000,
-        list:"Owanable"
+        list:"Owanable",
+        genere:"App_Best_Selling_Games"
       },
       {
-        id:2,
+        id:25,
         name:"Spotify",
         Image:"https://store-images.s-microsoft.com/image/apps.7471.14495311847124170.e89a4dce-fd9a-4a10-b8e4-a6c3aa1c055e.03d81561-4078-4efb-8884-19e1161ab56b?w=100",
         type:"Music",
         Rating:1000,
-        list:"Owanable"
+        list:"Owanable",
+        genere:"App_Best_Selling_Games"
       },
       {
-        id:3,
+        id:26,
         name:"Spotify",
         Image:"https://store-images.s-microsoft.com/image/apps.7471.14495311847124170.e89a4dce-fd9a-4a10-b8e4-a6c3aa1c055e.03d81561-4078-4efb-8884-19e1161ab56b?w=100",
         type:"Music",
         Rating:1000,
-        list:"Owanable"
+        list:"Owanable",
+        genere:"App_Best_Selling_Games"
       },
       {
-        id:4,
+        id:27,
         name:"Spotify",
         Image:"https://store-images.s-microsoft.com/image/apps.7471.14495311847124170.e89a4dce-fd9a-4a10-b8e4-a6c3aa1c055e.03d81561-4078-4efb-8884-19e1161ab56b?w=100",
         type:"Music",
         Rating:1000,
-        list:"Owanable"
+        list:"Owanable",
+        genere:"App_Best_Selling_Games"
       },
       {
-        id:5,
+        id:28,
         name:"Spotify",
         Image:"https://store-images.s-microsoft.com/image/apps.7471.14495311847124170.e89a4dce-fd9a-4a10-b8e4-a6c3aa1c055e.03d81561-4078-4efb-8884-19e1161ab56b?w=100",
         type:"Music",
         Rating:1000,
-        list:"Owanable"
+        list:"Owanable",
+        genere:"App_Best_Selling_Games"
       },
       {
-        id:6,
+        id:29,
         name:"Spotify",
         Image:"https://store-images.s-microsoft.com/image/apps.7471.14495311847124170.e89a4dce-fd9a-4a10-b8e4-a6c3aa1c055e.03d81561-4078-4efb-8884-19e1161ab56b?w=100",
         type:"Music",
         Rating:1000,
-        list:"Owanable"
+        list:"Owanable",
+        genere:"App_Best_Selling_Games"
       }
-    ],
-    App_New_Movies:[
+  ,
       {
-        id:1,
+        id:30,
         name:"Spotify",
         Image:"https://store-images.s-microsoft.com/image/apps.7471.14495311847124170.e89a4dce-fd9a-4a10-b8e4-a6c3aa1c055e.03d81561-4078-4efb-8884-19e1161ab56b?w=100",
         type:"Music",
         Rating:1000,
         list:"Owanable",
-        price:1000
+        price:1000,
+        genere:"App_New_Movies"
       },
       {
-        id:2,
+        id:31,
         name:"Spotify",
         Image:"https://store-images.s-microsoft.com/image/apps.7471.14495311847124170.e89a4dce-fd9a-4a10-b8e4-a6c3aa1c055e.03d81561-4078-4efb-8884-19e1161ab56b?w=100",
         type:"Music",
         Rating:1000,
         list:"Owanable",
-        price:1000
+        price:1000,
+        genere:"App_New_Movies"
       },
       {
-        id:3,
+        id:32,
         name:"Spotify",
         Image:"https://store-images.s-microsoft.com/image/apps.7471.14495311847124170.e89a4dce-fd9a-4a10-b8e4-a6c3aa1c055e.03d81561-4078-4efb-8884-19e1161ab56b?w=100",
         type:"Music",
         Rating:1000,
         list:"Owanable",
-        price:900
+        price:900,
+        genere:"App_New_Movies"
       },
       {
-        id:4,
+        id:33,
         name:"Spotify",
         Image:"https://store-images.s-microsoft.com/image/apps.7471.14495311847124170.e89a4dce-fd9a-4a10-b8e4-a6c3aa1c055e.03d81561-4078-4efb-8884-19e1161ab56b?w=100",
         type:"Music",
         Rating:1000,
         list:"Owanable",
-        price:90
+        price:90,
+        genere:"App_New_Movies"
       },
       {
-        id:5,
+        id:34,
         name:"Spotify",
         Image:"https://store-images.s-microsoft.com/image/apps.7471.14495311847124170.e89a4dce-fd9a-4a10-b8e4-a6c3aa1c055e.03d81561-4078-4efb-8884-19e1161ab56b?w=100",
         type:"Music",
         Rating:1000,
         list:"Owanable",
-        price:900
+        price:900,
+        genere:"App_New_Movies"
       },
       {
-        id:6,
+        id:35,
         name:"Spotify",
         Image:"https://store-images.s-microsoft.com/image/apps.7471.14495311847124170.e89a4dce-fd9a-4a10-b8e4-a6c3aa1c055e.03d81561-4078-4efb-8884-19e1161ab56b?w=100",
         type:"Music",
         Rating:1000,
         list:"Owanable",
-        price:900
+        price:900,
+        genere:"App_New_Movies"
       }
-    ]
- ,
-   
-    Game_Essential_Apps:[
+,
       {
-        id:1,
+        id:36,
         name:"Spotify",
         Image:"https://store-images.s-microsoft.com/image/apps.7471.14495311847124170.e89a4dce-fd9a-4a10-b8e4-a6c3aa1c055e.03d81561-4078-4efb-8884-19e1161ab56b?w=100",
         type:"Music",
         Rating:1000,
-        list:"Owanable"
+        list:"Owanable",
+        genere:"Game_Essential_Apps"
       },
       {
-        id:2,
+        id:37,
         name:"Spotify",
         Image:"https://store-images.s-microsoft.com/image/apps.7471.14495311847124170.e89a4dce-fd9a-4a10-b8e4-a6c3aa1c055e.03d81561-4078-4efb-8884-19e1161ab56b?w=100",
         type:"Music",
         Rating:1000,
-        list:"Owanable"
+        list:"Owanable",
+        genere:"Game_Essential_Apps"
       },
       {
-        id:3,
+        id:38,
         name:"Spotify",
         Image:"https://store-images.s-microsoft.com/image/apps.7471.14495311847124170.e89a4dce-fd9a-4a10-b8e4-a6c3aa1c055e.03d81561-4078-4efb-8884-19e1161ab56b?w=100",
         type:"Music",
         Rating:1000,
-        list:"Owanable"
+        list:"Owanable",
+        genere:"Game_Essential_Apps"
       },
       {
-        id:4,
+        id:39,
         name:"Spotify",
         Image:"https://store-images.s-microsoft.com/image/apps.7471.14495311847124170.e89a4dce-fd9a-4a10-b8e4-a6c3aa1c055e.03d81561-4078-4efb-8884-19e1161ab56b?w=100",
         type:"Music",
         Rating:1000,
-        list:"Owanable"
+        list:"Owanable",
+        genere:"Game_Essential_Apps"
       },
       {
-        id:5,
+        id:40,
         name:"Spotify",
         Image:"https://store-images.s-microsoft.com/image/apps.7471.14495311847124170.e89a4dce-fd9a-4a10-b8e4-a6c3aa1c055e.03d81561-4078-4efb-8884-19e1161ab56b?w=100",
         type:"Music",
         Rating:1000,
-        list:"Owanable"
+        list:"Owanable",
+        genere:"Game_Essential_Apps"
       },
       {
-        id:6,
+        id:41,
         name:"Spotify",
         Image:"https://store-images.s-microsoft.com/image/apps.7471.14495311847124170.e89a4dce-fd9a-4a10-b8e4-a6c3aa1c055e.03d81561-4078-4efb-8884-19e1161ab56b?w=100",
         type:"Music",
         Rating:1000,
-        list:"Owanable"
+        list:"Owanable",
+        genere:"Game_Essential_Apps"
       }
-    ],
-    Game_Best_Selling_Games:[
+  ,
       {
-        id:1,
+        id:42,
         name:"Spotify",
         Image:"https://store-images.s-microsoft.com/image/apps.7471.14495311847124170.e89a4dce-fd9a-4a10-b8e4-a6c3aa1c055e.03d81561-4078-4efb-8884-19e1161ab56b?w=100",
         type:"Music",
         Rating:1000,
-        list:"Owanable"
+        list:"Owanable",
+        genere:"Game_Best_Selling_Games"
       },
       {
-        id:2,
+        id:43,
         name:"Spotify",
         Image:"https://store-images.s-microsoft.com/image/apps.7471.14495311847124170.e89a4dce-fd9a-4a10-b8e4-a6c3aa1c055e.03d81561-4078-4efb-8884-19e1161ab56b?w=100",
         type:"Music",
         Rating:1000,
-        list:"Owanable"
+        list:"Owanable",
+        genere:"Game_Best_Selling_Games"
       },
       {
-        id:3,
+        id:44,
         name:"Spotify",
         Image:"https://store-images.s-microsoft.com/image/apps.7471.14495311847124170.e89a4dce-fd9a-4a10-b8e4-a6c3aa1c055e.03d81561-4078-4efb-8884-19e1161ab56b?w=100",
         type:"Music",
         Rating:1000,
-        list:"Owanable"
+        list:"Owanable",
+        genere:"Game_Best_Selling_Games"
       },
       {
-        id:4,
+        id:45,
         name:"Spotify",
         Image:"https://store-images.s-microsoft.com/image/apps.7471.14495311847124170.e89a4dce-fd9a-4a10-b8e4-a6c3aa1c055e.03d81561-4078-4efb-8884-19e1161ab56b?w=100",
         type:"Music",
         Rating:1000,
-        list:"Owanable"
+        list:"Owanable",
+        genere:"Game_Best_Selling_Games"
       },
       {
-        id:5,
+        id:46,
         name:"Spotify",
         Image:"https://store-images.s-microsoft.com/image/apps.7471.14495311847124170.e89a4dce-fd9a-4a10-b8e4-a6c3aa1c055e.03d81561-4078-4efb-8884-19e1161ab56b?w=100",
         type:"Music",
         Rating:1000,
-        list:"Owanable"
+        list:"Owanable",
+        genere:"Game_Best_Selling_Games"
       },
       {
-        id:6,
+        id:47,
         name:"Spotify",
         Image:"https://store-images.s-microsoft.com/image/apps.7471.14495311847124170.e89a4dce-fd9a-4a10-b8e4-a6c3aa1c055e.03d81561-4078-4efb-8884-19e1161ab56b?w=100",
         type:"Music",
         Rating:1000,
-        list:"Owanable"
+        list:"Owanable",
+        genere:"Game_Best_Selling_Games"
       }
-    ],
-    Game_Featured_Free_Games:[
+,
       {
-        id:1,
+        id:48,
         name:"King and Queen",
         Image:"https://store-images.s-microsoft.com/image/apps.7471.14495311847124170.e89a4dce-fd9a-4a10-b8e4-a6c3aa1c055e.03d81561-4078-4efb-8884-19e1161ab56b?w=100",
         type:"Music",
         Rating:1000,
         list:"Owanable",
-        price:1000
+        price:1000,
+        genere:"Game_Featured_Free_Games"
       },
       {
-        id:2,
+        id:49,
         name:"Spotify",
         Image:"https://store-images.s-microsoft.com/image/apps.7471.14495311847124170.e89a4dce-fd9a-4a10-b8e4-a6c3aa1c055e.03d81561-4078-4efb-8884-19e1161ab56b?w=100",
         type:"Music",
         Rating:1000,
         list:"Owanable",
-        price:1000
+        price:1000,
+        genere:"Game_Featured_Free_Games"
       },
       {
-        id:3,
+        id:50,
         name:"Spotify",
         Image:"https://store-images.s-microsoft.com/image/apps.7471.14495311847124170.e89a4dce-fd9a-4a10-b8e4-a6c3aa1c055e.03d81561-4078-4efb-8884-19e1161ab56b?w=100",
         type:"Music",
         Rating:1000,
         list:"Owanable",
-        price:900
+        price:900,
+        genere:"Game_Featured_Free_Games"
       },
       {
-        id:4,
+        id:51,
         name:"Spotify",
         Image:"https://store-images.s-microsoft.com/image/apps.7471.14495311847124170.e89a4dce-fd9a-4a10-b8e4-a6c3aa1c055e.03d81561-4078-4efb-8884-19e1161ab56b?w=100",
         type:"Music",
         Rating:1000,
         list:"Owanable",
-        price:90
+        price:90,
+        genere:"Game_Featured_Free_Games"
       },
       {
-        id:5,
+        id:52,
         name:"Spotify",
         Image:"https://store-images.s-microsoft.com/image/apps.7471.14495311847124170.e89a4dce-fd9a-4a10-b8e4-a6c3aa1c055e.03d81561-4078-4efb-8884-19e1161ab56b?w=100",
         type:"Music",
         Rating:1000,
         list:"Owanable",
-        price:900
+        price:900,
+        genere:"Game_Featured_Free_Games"
       },
       {
-        id:6,
+        id:53,
         name:"Spotify",
         Image:"https://store-images.s-microsoft.com/image/apps.7471.14495311847124170.e89a4dce-fd9a-4a10-b8e4-a6c3aa1c055e.03d81561-4078-4efb-8884-19e1161ab56b?w=100",
         type:"Music",
         Rating:1000,
         list:"Owanable",
-        price:900
+        price:900,
+        genere:"Game_Featured_Free_Games"
       }
-    ]
-  }
+    
+  
 ]
