@@ -17,7 +17,7 @@ const ItemDetails = ({route}) => {
       <ScrollView>
         <Header/>
      <ItemTop id={id}/>
-     <ItemScreenShoots/>
+     <ItemScreenShoots id={id}/>
      </ScrollView>
     </View>
   )
