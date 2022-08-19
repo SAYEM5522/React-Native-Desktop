@@ -1,6 +1,8 @@
-import { Image, StyleSheet, Text, View } from 'react-native'
+import { Image, Pressable, StyleSheet, Text, View } from 'react-native'
 import React from 'react'
 import { Dimensions } from 'react-native'
+import { useCallback } from 'react'
+import { useNavigation } from '@react-navigation/native'
 const { width,height } = Dimensions.get('screen')
 
 const styles = StyleSheet.create({
@@ -57,7 +59,12 @@ const styles = StyleSheet.create({
 })
 
 const DemoItemDetails = ({item,index,size}) => {
+  const navigation=useNavigation()
+  const GotoDetails =useCallback(()=>{
+     navigation.navigate("ItemDetails",{id:1})
+  },[])
   return (
+    <Pressable onPress={GotoDetails}>
     <View key={index} style={styles.DemoItemDetails}>
       <Image
              source={{uri:item.Image}}
@@ -94,6 +101,7 @@ const DemoItemDetails = ({item,index,size}) => {
            </View>
            <Text style={styles.Free}>{item.list}</Text>
     </View>
+    </Pressable>
   )
 }
 
