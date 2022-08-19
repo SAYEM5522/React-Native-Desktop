@@ -1,6 +1,5 @@
 import { Dimensions, Image, ScrollView, StyleSheet, Text, View } from 'react-native'
 import React from 'react'
-import { Data } from '../../Data'
 const { width,height } = Dimensions.get('window')
 const styles = StyleSheet.create({
   MiniBannerList:{

@@ -6,7 +6,7 @@ import { useNavigation } from '@react-navigation/native'
 const { width,height } = Dimensions.get('window')
 import { Data } from '../../Data'
 import { Item } from '../../ItemList'
-
+import { Item2 } from '../../ItemList2'
 const styles = StyleSheet.create({
   MiniBanner:{
     height:height/1.6,
@@ -53,8 +53,9 @@ const MiniBanner = ({ApiId,title,description,ApiName}) => {
   const SeeAll=useCallback(()=>{
     navigation.push("MiniBannerList")
   },[])
-  const HomeItem=Item.map((item,index)=>item)[ApiId][ApiName]
-  const newItem=HomeItem.slice(0,3)
+  // const HomeItem=Item.map((item,index)=>item)[ApiId][ApiName]
+  const newList=Item2.filter((item)=>item.genere===ApiName)
+  const newItem=newList.slice(0,3)
   return (
     <View style={styles.MiniBanner}>
      <Image

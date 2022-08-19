@@ -1,8 +1,9 @@
 import { Dimensions, StyleSheet, Text, View } from 'react-native'
 import React,{useEffect,useState} from 'react'
 import { Item } from '../../ItemList'
+import { Item2 } from '../../ItemList2'
+
 import DemoItemDetails from './DemoItemDetails'
-const { width,height } = Dimensions.get('window')
 const styles = StyleSheet.create({
   DemoItem:{
     display:"flex",
@@ -21,9 +22,11 @@ const styles = StyleSheet.create({
   },
 })
 const DemoItem = ({title,apiName,size}) => {
+  const newList=Item2.filter((item)=>item.genere===apiName)
   
-  const HomeItem=Item.map((item,index)=>item)[0][apiName]
-  const SliceItem=HomeItem.slice(0,4)
+  // const HomeItem=Item.map((item,index)=>item)[0][apiName]
+  // console.log(HomeItem)
+  const SliceItem=newList.slice(0,4)
   // const [SliceItem,setSliceItem]=useState(HomeItem.slice(0,4))
   // useEffect(()=>{
   //    if(width>1200){
