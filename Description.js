@@ -2,7 +2,7 @@ export const Description=[
   {
     id:1,
     name:"Spotify",
-    description:"Spotify is a streaming music service that allows users to listen to music while on the go. Users can create playlists, search for music, and listen to the music they love.",
+    description:"Spotify is a streaming music service that allows users to listen to music while on the go. Users can create playlists, search for music, and listen to the music they love.It is one of the largest music streaming service providers, with over 433 million monthly active users, including 188 million paying subscribers, as of June 2022.The basic, ad-supported version of Spotify is completely free. It offers unlimited access to the full catalog of music and podcasts but comes with a few drawbacks. The most intrusive are frequent ad breaks. These can really kill your groove if you're listening at a party.",
     Rating:1000,
     type:"Music",
     list:"Free",

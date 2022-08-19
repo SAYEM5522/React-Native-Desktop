@@ -1,9 +1,11 @@
 import { Image, ScrollView, StyleSheet, Text, View } from 'react-native'
 import React from 'react'
 import { Description } from '../../../Description'
+import { useState } from 'react'
 
 const ItemScreenShoots = ({id}) => {
   return (
+    <>
     <View style={styles.ItemScreenShoots}>
       <View>
         <Text style={styles.ScreenShoots_Cap}>ScreenShoots</Text>
@@ -36,6 +38,25 @@ const ItemScreenShoots = ({id}) => {
         })
      }
     </View>
+    <View>
+   
+      {
+        Description.map((item,index)=>{
+          if(id===item.id){
+            return(
+              <View key={index} style={styles.DescriptionView}>
+                 <View>
+             <Text style={styles.ScreenShoots_Cap}>Description</Text>
+             </View>
+                <Text style={styles.DesText}>{item.description}</Text>
+              </View>
+            )
+          }
+        })
+      }
+    </View>
+
+    </>
   )
 }
 
@@ -52,8 +73,8 @@ const styles = StyleSheet.create({
     borderColor:"#ddd"
   },
   ScreenShoots_Image:{
-    height:390,
-    width:550,
+    height:380,
+    width:580,
     resizeMode:"cover",
     borderRadius:10,
     marginRight:5
@@ -72,5 +93,19 @@ const styles = StyleSheet.create({
   },
   ScreenShoots_Image_List:{
     marginLeft:20
+  },
+  DescriptionView:{
+    width:"98%",
+    height:340,
+    marginTop:15,
+    backgroundColor:"#fff",
+    borderRadius:10,
+    borderWidth:1,
+    borderColor:"#ddd"
+  },
+  DesText:{
+    fontSize:15,
+    color:"black",
+    padding:15
   }
 })
