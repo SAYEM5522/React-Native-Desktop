@@ -1,7 +1,13 @@
 import { StyleSheet, Text, View } from 'react-native'
 import React from 'react'
 import DemoItemDetails from '../DemoItemDetails'
-
+const styles = StyleSheet.create({
+  Container:{
+    flexDirection:"row",
+    alignItems:"center",
+    display:"flex",
+  }
+})
 const PeopleView = ({item,index}) => {
   return (
     <View >
@@ -12,10 +18,3 @@ const PeopleView = ({item,index}) => {
 
 export default PeopleView
 
-const styles = StyleSheet.create({
-  Container:{
-    flexDirection:"row",
-    alignItems:"center",
-    display:"flex",
-  }
-})

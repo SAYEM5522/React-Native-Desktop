@@ -2,67 +2,6 @@ import { Image, ScrollView, StyleSheet, Text, View } from 'react-native'
 import React from 'react'
 import { Description } from '../../../Description'
 import { useState } from 'react'
-
-const ItemScreenShoots = ({id}) => {
-  return (
-    <>
-    <View style={styles.ItemScreenShoots}>
-      <View>
-        <Text style={styles.ScreenShoots_Cap}>ScreenShoots</Text>
-      </View>
-     {
-        Description.map((item,index)=>{
-          if(id===item.id){
-            return(
-              <View key={index} style={styles.ScreenShoots}>
-              <ScrollView
-              horizontal={true}
-              showsHorizontalScrollIndicator={false}
-              >
-             {
-                item.ScreenShoot.map((item,index)=>{
-                  return(
-                    <View key={index} style={styles.ScreenShoots_Image_List}>
-                      <Image
-                      source={{uri:item}}
-                      style={styles.ScreenShoots_Image}
-                      />
-                    </View>
-                  )
-                })
-             }
-              </ScrollView>
-               </View>
-            )
-          } 
-        })
-     }
-    </View>
-    <View>
-   
-      {
-        Description.map((item,index)=>{
-          if(id===item.id){
-            return(
-              <View key={index} style={styles.DescriptionView}>
-                 <View>
-             <Text style={styles.ScreenShoots_Cap}>Description</Text>
-             </View>
-                <Text style={styles.DesText}>{item.description}</Text>
-              </View>
-            )
-          }
-        })
-      }
-    </View>
-    
-
-    </>
-  )
-}
-
-export default ItemScreenShoots
-
 const styles = StyleSheet.create({
   ItemScreenShoots:{
     width:"98%",
@@ -110,3 +49,81 @@ const styles = StyleSheet.create({
     padding:15
   }
 })
+const ItemScreenShoots = ({id,type}) => {
+  return (
+    <>
+    <View style={{
+       width:type==="Movie"? "80%": "98%",
+       height:460,
+       marginTop:15,
+       backgroundColor:"#fff",
+       borderRadius:10,
+       borderWidth:1,
+       borderColor:"#ddd",
+       alignSelf:"center"
+    }}>
+      <View>
+        <Text style={styles.ScreenShoots_Cap}>ScreenShoots</Text>
+      </View>
+     {
+        Description.map((item,index)=>{
+          if(id===item.id){
+            return(
+              <View key={index} style={styles.ScreenShoots}>
+              <ScrollView
+              horizontal={true}
+              showsHorizontalScrollIndicator={false}
+              >
+             {
+                item.ScreenShoot.map((item,index)=>{
+                  return(
+                    <View key={index} style={styles.ScreenShoots_Image_List}>
+                      <Image
+                      source={{uri:item}}
+                      style={styles.ScreenShoots_Image}
+                      />
+                    </View>
+                  )
+                })
+             }
+              </ScrollView>
+               </View>
+            )
+          } 
+        })
+     }
+    </View>
+    <View>
+   
+      {
+        Description.map((item,index)=>{
+          if(id===item.id){
+            return(
+              <View key={index} style={{
+                width:type==="Movie"?"80%":"98%",
+                height:340,
+                marginTop:15,
+                backgroundColor:"#fff",
+                borderRadius:10,
+                borderWidth:1,
+                borderColor:"#ddd",
+                alignSelf:"center"
+              }}>
+                 <View>
+             <Text style={styles.ScreenShoots_Cap}>Description</Text>
+             </View>
+                <Text style={styles.DesText}>{item.description}</Text>
+              </View>
+            )
+          }
+        })
+      }
+    </View>
+    
+
+    </>
+  )
+}
+
+export default ItemScreenShoots
+

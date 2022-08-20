@@ -20,11 +20,18 @@ const ItemDetails = ({route}) => {
     <View style={styles.Container}>
       <ScrollView>
         <Header/>
-     <ItemTop id={id}/>
-     <ItemScreenShoots id={id}/>
+     <ItemTop id={id} type={type}/>
+     <ItemScreenShoots id={id} type={type}/>
      <View>
       <Text style={styles.Caption}>People also View</Text>
-      <View style={styles.List}>
+      <View style={{
+         display:"flex",
+         flexDirection:"row",
+         alignItems:"center",
+         flexWrap:"wrap",
+         width:type==="Movie"?"80%":"98%",
+         alignSelf:"center",
+      }}>
     {
       PeopleViewList.map((item,index)=>{
         return(
@@ -56,7 +63,7 @@ const styles = StyleSheet.create({
    },
    Caption:{
     fontSize:20,
-    marginLeft:10,
+    marginLeft:"10%",
     marginTop:20,
     fontWeight:"700",
     marginBottom:10

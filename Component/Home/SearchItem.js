@@ -1,9 +1,11 @@
-import { Image, ScrollView, StyleSheet, Text, View } from 'react-native'
+import { Image, Pressable, ScrollView, StyleSheet, Text, View } from 'react-native'
 import React from 'react'
 import { Item2 } from '../../ItemList2'
+import { useNavigation } from '@react-navigation/native'
 
 
 const SearchItem = ({search}) => {
+  const navigation = useNavigation()
   return (
     <View style={styles.SearchItem}>
       <ScrollView >
@@ -20,7 +22,7 @@ const SearchItem = ({search}) => {
        }
       }).map((item,index)=>{
         return(
-         
+          <Pressable key={index} onPress={()=>{navigation.navigate("ItemDetails",{id:item.id,type:item.type})}}>
           <View style={styles.ItemList} key={index} >
            <View>
            <Image
@@ -33,7 +35,7 @@ const SearchItem = ({search}) => {
               <Text style={styles.Type}>{item.type}</Text>
             </View>
           </View>
-          
+          </Pressable>
         )
       })
     }

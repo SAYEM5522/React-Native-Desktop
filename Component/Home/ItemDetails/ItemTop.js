@@ -1,59 +1,6 @@
 import {  Image, StyleSheet, Text, View } from 'react-native'
 import React from 'react'
 import { Description } from '../../../Description'
-const ItemTop = ({id}) => {
-  return (
-    <View style={styles.ItemTop}>
-     {
-        Description.map((item,index)=>{
-          if(id===item.id){
-            return(
-              <View key={index} style={styles.Top}>
-               <View style={styles.Top_Left}>
-                <Image
-                source={{uri:item.Img}}
-                  style={styles.Image}
-
-                />
-                </View>
-                <View style={styles.Top_middle}>
-                  <Text style={styles.name}>{item.name}</Text>
-                  <Text style={styles.company}>{item.company}</Text>
-                  <View style={styles.RatingList}>
-                    <View style={styles.RatingListBorder}>
-                    <Text style={styles.AvgRating}>{item.AvgRating}</Text>
-                     <Text style={styles.AvgRatingText}>Average</Text>
-                    </View>
-                    <View style={styles.RatingListBorder}>
-                    <Text style={styles.Rating}>{`${item.Rating>=1000?item.Rating/1000:item.Rating}${item.Rating>=1000?'k':''}`}</Text>
-                    <Text style={styles.RatingText}>Ratings</Text>
-                    </View>
-                  </View>
-                  <View style={styles.Des}>
-                    <Text>{item.description}</Text>
-                  </View>
-                  <View style={styles.Button}>
-                    <Text>{item.type}</Text>
-                  </View>
-                </View>
-                <View style={styles.Top_Right}>
-                <View style={styles.download}>
-                    <Text style={{color:"#fff"}}>{item.list}</Text>
-                  </View>
-                </View>
-                
-
-                </View>
-            )
-          }
-        })
-     }
-    </View>
-  )
-}
-
-export default ItemTop
-
 const styles = StyleSheet.create({
   ItemTop:{
     width:"98%",
@@ -158,5 +105,95 @@ const styles = StyleSheet.create({
   },
   Top_Right:{
     marginLeft:-230
+  },
+  BannerImg:{
+    width:"100%",
+    height:600,
+    resizeMode:"cover",
+    borderTopRightRadius:10,
+    borderTopLeftRadius:10,
   }
 })
+const ItemTop = ({id,type}) => {
+  return (
+    <>
+    {
+      (type==="Movie"?
+      <View>
+        <Image
+        source={{uri:"https://wallpapercave.com/wp/wp7630844.jpg"}}
+        style={styles.BannerImg}
+        />
+      </View>
+      :null)
+
+      }
+    
+    <View style={{
+      width:type=="Movie"?"80%":"98%",
+      height:275,
+      backgroundColor:"rgba(250, 250, 250,0.7)",
+      borderRadius:10,
+      borderWidth:1,
+      borderColor:"#ddd",
+      alignSelf:"center",
+      marginTop:type=="Movie"?-200:0,
+    }}>
+     {
+        Description.map((item,index)=>{
+          if(id===item.id){
+            return(
+              <View key={index} style={styles.Top}>
+               <View style={styles.Top_Left}>
+                <Image
+                source={{uri:item.Img}}
+                style={{
+                  width: type==="Movie"?200:160,
+                  height:type==="Movie"?250:160,
+                  borderRadius:5,
+                  resizeMode:"cover",
+                  marginTop:type==="Movie"?10:50,
+                  marginLeft:type==="Movie"?10:50
+                }}
+
+                />
+                </View>
+                <View style={styles.Top_middle}>
+                  <Text style={styles.name}>{item.name}</Text>
+                  <Text style={styles.company}>{item.company}</Text>
+                  <View style={styles.RatingList}>
+                    <View style={styles.RatingListBorder}>
+                    <Text style={styles.AvgRating}>{item.AvgRating}</Text>
+                     <Text style={styles.AvgRatingText}>Average</Text>
+                    </View>
+                    <View style={styles.RatingListBorder}>
+                    <Text style={styles.Rating}>{`${item.Rating>=1000?item.Rating/1000:item.Rating}${item.Rating>=1000?'k':''}`}</Text>
+                    <Text style={styles.RatingText}>Ratings</Text>
+                    </View>
+                  </View>
+                  <View style={styles.Des}>
+                    <Text>{item.description}</Text>
+                  </View>
+                  <View style={styles.Button}>
+                    <Text>{item.type}</Text>
+                  </View>
+                </View>
+                <View style={styles.Top_Right}>
+                <View style={styles.download}>
+                    <Text style={{color:"#fff"}}>{item.list}</Text>
+                  </View>
+                </View>
+                
+
+                </View>
+            )
+          }
+        })
+     }
+    </View>
+    </>
+  )
+}
+
+export default ItemTop
+

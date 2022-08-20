@@ -14,10 +14,6 @@ const styles = StyleSheet.create({
   marginRight:15,
   marginBottom:20
   },
-  MiniBannerList_Item_Iage:{
-    
-    
-  },
   Name:{
     fontSize:16,
     marginLeft:10,
@@ -61,10 +57,10 @@ const styles = StyleSheet.create({
 const DemoItemDetails = ({item,index,size}) => {
   const navigation=useNavigation()
   const GotoDetails =useCallback(()=>{
-     navigation.navigate("ItemDetails",{id:1,type:"Game"})
+     navigation.navigate("ItemDetails",{id:item.id,type:item.type})
   },[])
   return (
-    <Pressable onPress={GotoDetails}>
+    <Pressable onPress={GotoDetails} key={index}>
     <View key={index} style={styles.DemoItemDetails}>
       <Image
              source={{uri:item.Image}}
@@ -74,9 +70,7 @@ const DemoItemDetails = ({item,index,size}) => {
               marginTop:size?30:15,
               alignSelf:"center",
               borderRadius:size?3:6
-              
-             }}
-             />
+              }}/>
 
          <View style={{
           marginTop:size?25:0
