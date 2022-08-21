@@ -132,7 +132,7 @@ const ItemTop = ({id,type}) => {
     <View style={{
       width:type=="Movie"?"80%":"98%",
       height:275,
-      backgroundColor:"rgba(250, 250, 250,0.7)",
+      backgroundColor:"rgba(250, 250, 250,1)",
       borderRadius:10,
       borderWidth:1,
       borderColor:"#ddd",
@@ -160,7 +160,12 @@ const ItemTop = ({id,type}) => {
                 </View>
                 <View style={styles.Top_middle}>
                   <Text style={styles.name}>{item.name}</Text>
-                  <Text style={styles.company}>{item.company}</Text>
+                  <Text style={{
+                    fontSize:15,
+                    marginTop:5,
+                    marginLeft:20,
+                    color:type==="Movie"?"black":"#999",
+                  }}>{item.company}</Text>
                   <View style={styles.RatingList}>
                     <View style={styles.RatingListBorder}>
                     <Text style={styles.AvgRating}>{item.AvgRating}</Text>

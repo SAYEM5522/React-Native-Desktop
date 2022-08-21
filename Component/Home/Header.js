@@ -15,6 +15,11 @@ const Header = () => {
     <View style={styles.Header}>
    
       <View style={styles.Left_Header}>
+      <Image
+                  source={require('../../image/m-8.png')}
+                  style={styles.Icon}
+                  
+                 />
        <Text style={styles.Left_Header_Text}>Microsoft Store</Text>
       </View>
       <View style={styles.Middle_Header}>
@@ -49,7 +54,7 @@ const Header = () => {
       </View>
     </View>
     <View style={styles.Right_Header}>
-    <Text>Microsoft Store</Text>
+    <Text>MS</Text>
     </View>
     </View>
   )
@@ -81,10 +86,16 @@ const styles = StyleSheet.create({
   Middle_Header:{
     marginTop:-1.5
   },
+  Left_Header:{
+    display:"flex",
+    flexDirection:"row",
+    alignItems:"center",
+
+  },
   Left_Header_Text:{
     fontSize:12,
     position:"absolute",
-    left:-80,
+    left:-60,
     top:-6
   },
   SearchIcon:{
@@ -93,5 +104,21 @@ const styles = StyleSheet.create({
     top:5,
     height:22,
     width:22
+  },
+  Icon:{
+    height:17,
+    width:17,
+    position:"absolute",
+    left:-100,
+  },
+  Right_Header:{
+    display:"flex",
+    justifyContent:"center",
+    alignItems:"center",
+    width:30,
+    height:30,
+    borderRadius:50,
+    backgroundColor:"#fff",
+    marginRight:90,
   }
 })

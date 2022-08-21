@@ -39,6 +39,6 @@ const styles = StyleSheet.create({
   },
   Home_Info:{
     marginLeft:35,
-    marginRight:30,
+    // marginRight:30,
    }
 })

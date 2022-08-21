@@ -23,7 +23,13 @@ const ItemDetails = ({route}) => {
      <ItemTop id={id} type={type}/>
      <ItemScreenShoots id={id} type={type}/>
      <View>
-      <Text style={styles.Caption}>People also View</Text>
+      <Text style={{
+        fontSize:20,
+        marginLeft:type==="Movie"?"10%":"2%",
+        marginTop:20,
+        fontWeight:"700",
+        marginBottom:10
+      }}>People also View</Text>
       <View style={{
          display:"flex",
          flexDirection:"row",
@@ -63,7 +69,7 @@ const styles = StyleSheet.create({
    },
    Caption:{
     fontSize:20,
-    marginLeft:"10%",
+    marginLeft:"2%",
     marginTop:20,
     fontWeight:"700",
     marginBottom:10
