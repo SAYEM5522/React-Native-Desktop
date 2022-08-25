@@ -4,50 +4,50 @@ export const Item2=[
       {
         id:1,
         name:"Spotify",
-        Image:"https://store-images.s-microsoft.com/image/apps.30432.13571498826857201.00a9d390-581f-492c-b148-b2ce81649480.b4ea65c8-8446-470b-a904-1080ffacc04e?w=100",
+        Image:"https://cdn.wallpapersafari.com/7/6/8qH14d.jpg",
         type:"Music",
-        Rating:1000,
+        Rating:2000,
         list:"Owanable",
         genere:"Home_Music_Streaming_Apps"
       },
       {
         id:2,
         name:"Netflix",
-        Image:"https://store-images.s-microsoft.com/image/apps.20311.13756631990520576.c7bf8936-a11d-4c89-b498-2442c2977baf.d9909661-86c4-4ca8-b820-20101dd12a50?w=100",
+        Image:"https://wallpaperaccess.com/full/2772922.png",
         type:"Movie",
-        Rating:1000,
+        Rating:10000,
         list:"Owanable",
-        genere:"Home_Music_Streaming_Apps"
+        genere:"Home_New_Movies"
 
       },
       {
         id:3,
-        name:"HBO",
-        Image:"https://store-images.s-microsoft.com/image/apps.7151.14463102301496575.4f5d3996-e039-4517-b858-744323a1cac6.bb18b98e-1840-4f95-8612-7dad2e4c81f7?w=100",
-        type:"Music",
-        Rating:1000,
+        name:"HBO Max",
+        Image:"https://wallpaperaccess.com/full/7886111.jpg",
+        type:"Movies",
+        Rating:3000,
         list:"Owanable",
-        genere:"Home_Music_Streaming_Apps"
+        genere:"Home_New_Movies"
 
       },
       {
         id:4,
         name:"Amazon Prime Video",
-        Image:"https://store-images.s-microsoft.com/image/apps.7471.14495311847124170.e89a4dce-fd9a-4a10-b8e4-a6c3aa1c055e.03d81561-4078-4efb-8884-19e1161ab56b?w=100",
-        type:"Music",
-        Rating:1000,
+        Image:"https://logos-world.net/wp-content/uploads/2021/02/Amazon-Prime-Video-Symbol.png",
+        type:"Movies",
+        Rating:9000,
         list:"Owanable",
-        genere:"Home_Music_Streaming_Apps"
+        genere:"Home_New_Movies"
 
       },
       {
         id:5,
         name:"Disney+",
         Image:"https://store-images.s-microsoft.com/image/apps.7471.14495311847124170.e89a4dce-fd9a-4a10-b8e4-a6c3aa1c055e.03d81561-4078-4efb-8884-19e1161ab56b?w=100",
-        type:"Music",
-        Rating:1000,
+        type:"Movies",
+        Rating:5000,
         list:"Owanable",
-        genere:"Home_Music_Streaming_Apps"
+        genere:"Home_New_Movies"
 
       },
       
@@ -55,51 +55,51 @@ export const Item2=[
   
       {
         id:6,
-        name:"Spotify",
-        Image:"https://store-images.s-microsoft.com/image/apps.21124.13777453757269044.1ac58219-df7a-442e-b51c-648dd6d66d80.825c26db-cecc-43bf-86be-0391e0a50408?q=90&w=270&h=405&mode=crop&format=jpg&background=%230078D7",
-        type:"Game",
-        Rating:1000,
+        name:"Apple TV+",
+        Image:"https://www.apple.com/v/apple-tv-plus/ab/images/meta/apple-tv__e7aqjl2rqzau_og.png",
+        type:"Movies",
+        Rating:4000,
         list:"Owanable",
-        genere:"Home_Best_Selling_Games"
+        genere:"Home_New_Movies"
       },
       {
         id:7,
-        name:"Spotify",
-        Image:"https://store-images.s-microsoft.com/image/apps.45787.9007199266251721.272a38e8-1cb6-413f-892d-c36d74a53a7a.2c93936c-63d8-457a-838f-5027bab854c7?q=90&w=270&h=405&mode=crop&format=jpg&background=%230078D7",
-        type:"Game",
-        Rating:1000,
+        name:"Paramount+",
+        Image:"https://cdn.mos.cms.futurecdn.net/2km7HbDoR8PpKRhykhRjjG.jpg",
+        type:"Movies",
+        Rating:2500,
         list:"Owanable",
-        genere:"Home_Best_Selling_Games"
+        genere:"Home_New_Movies"
 
       },
       {
         id:8,
-        name:"Spotify",
-        Image:"https://store-images.s-microsoft.com/image/apps.21124.13777453757269044.1ac58219-df7a-442e-b51c-648dd6d66d80.825c26db-cecc-43bf-86be-0391e0a50408?q=90&w=270&h=405&mode=crop&format=jpg&background=%230078D7",
-        type:"Game",
+        name:"Hulu",
+        Image:"https://assetshuluimcom-a.akamaihd.net/h3o/facebook_share_thumb_default_hulu.jpg",
+        type:"Movies",
         Rating:1000,
         list:"Owanable",
-        genere:"Home_Best_Selling_Games"
+        genere:"Home_New_Movies"
 
       },
       {
         id:9,
-        name:"Spotify",
-        Image:"https://store-images.s-microsoft.com/image/apps.1838.9007199266280866.c91d768f-43f7-46a3-ba5a-b13731a03443.4692517b-fe18-4b01-96ce-af9066561866?q=90&w=270&h=405&mode=crop&format=jpg&background=%230078D7",
-        type:"Game",
-        Rating:1000,
+        name:"Youtube",
+        Image:"https://static.vecteezy.com/system/resources/previews/003/206/623/original/youtube-editorial-app-icon-free-vector.jpg",
+        type:"Movies",
+        Rating:10000,
         list:"Owanable",
-        genere:"Home_Best_Selling_Games"
+        genere:"Home_New_Movies"
 
       },
       {
         id:10,
-        name:"Spotify",
-        Image:"https://store-images.s-microsoft.com/image/apps.53674.13812021519099434.07c416c9-b111-4c55-be3d-6b8dcb0686a0.9a1df41d-f4f8-43ce-84b3-25cf67018c84?q=90&w=270&h=405&mode=crop&format=jpg&background=%230078D7",
-        type:"Game",
+        name:"Zee5",
+        Image:"https://logovtor.com/wp-content/uploads/2020/12/zee5-logo-vector.png",
+        type:"Movies",
         Rating:1000,
         list:"Owanable",
-        genere:"Home_Best_Selling_Games"
+        genere:"Home_New_Movies"
 
       },
       {
