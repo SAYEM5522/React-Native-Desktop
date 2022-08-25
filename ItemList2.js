@@ -97,32 +97,32 @@ export const Item2=[
         name:"Zee5",
         Image:"https://logovtor.com/wp-content/uploads/2020/12/zee5-logo-vector.png",
         type:"Movies",
-        Rating:1000,
+        Rating:1500,
         list:"Owanable",
         genere:"Home_New_Movies"
 
       },
       {
         id:11,
-        name:"Spotify",
-        Image:"https://store-images.s-microsoft.com/image/apps.59166.13735730254131365.fcc2ce21-1051-4747-ad47-babc66fc8536.37688e46-adbe-4bfc-b8c3-84162b48fd48?q=90&w=270&h=405&mode=crop&format=jpg&background=%230078D7",
+        name:"Deezer",
+        Image:"https://logos-world.net/wp-content/uploads/2021/03/Deezer-Emblem.jpg",
         type:"Music",
         Rating:1000,
         list:"Owanable",
-        genere:"Home_Best_Selling_Games"
+        genere:"Home_Music_Streaming_Apps"
 
       }
     ,
     
       {
         id:12,
-        name:"Spotify",
-        Image:"https://store-images.s-microsoft.com/image/apps.7471.14495311847124170.e89a4dce-fd9a-4a10-b8e4-a6c3aa1c055e.03d81561-4078-4efb-8884-19e1161ab56b?w=100",
-        type:"Movie",
-        Rating:1000,
+        name:"Microsoft Edge",
+        Image:"https://thurrott.s3.amazonaws.com/2019/11/Edge-logo.png",
+        type:"Essential",
+        Rating:500,
         list:"Owanable",
         price:1000,
-        genere:"Home_New_Movies"
+        genere:"Game_Essential_Apps"
       },
       {
         id:13,
