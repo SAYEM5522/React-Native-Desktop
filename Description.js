@@ -22,7 +22,7 @@ export const Description=[
     id:2,
     name:"Netflix",
     description:"Netflix has something for everyone. Watch TV shows and movies recommended just for you, including award-winning Netflix original series, movies, and documentaries. There’s even a safe watching experience just for kids with family-friendly entertainment.Now on Windows, you can enjoy every detail of the world’s favorite shows in 4K Ultra HD on Netflix. Download many of your favorite series and movies with the simple click of the download button. You can watch while you’re on the go or without an Internet connection on your PC, tablet or laptop with Windows 10.Instantly watch TV shows and movies through thousands of internet-connected devices. You can play, pause, and resume watching, all without commercials. Netflix adds new content all the time. Browse titles or search for your favorites. The more you watch, the better Netflix gets at recommending TV shows and movies that you’ll love — just for you. You can create up to five individual profiles within a single Netflix account. Profiles allow different members of your household to have their own personalized Netflix experience built around the movies and TV shows they enjoy. If you decide Netflix isn't for you - no problem. No contract, no cancellation fees, no commitment. Cancel online anytime.",
-    Rating:1000,
+    Rating:10000,
     type:"Movie",
     list:"Free",
     ScreenShoot:[
